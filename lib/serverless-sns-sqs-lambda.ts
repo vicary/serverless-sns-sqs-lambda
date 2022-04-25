@@ -1,3 +1,4 @@
+import { pascalCase } from "change-case";
 import { JsonObject } from "type-fest";
 
 // Future work: Properly type the file
@@ -54,15 +55,6 @@ const parseIntOr = (intString, defaultInt) => {
     return defaultInt;
   }
 };
-
-/**
- * Converts a string from camelCase to PascalCase. Basically, it just
- * capitalises the first letter.
- *
- * @param {string} camelCase camelCase string
- */
-const pascalCase = (camelCase: string): string =>
-  camelCase.slice(0, 1).toUpperCase() + camelCase.slice(1);
 
 const pascalCaseAllKeys = (jsonObject: JsonObject): JsonObject =>
   Object.keys(jsonObject).reduce(
