@@ -1,3 +1,7 @@
+# Deprecation
+
+This fork is meant to add support for Serverless V3, archiving and deprecating this since upstream package supports that since 2.0.0.
+
 # Serverless Sns Sqs Lambda
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
